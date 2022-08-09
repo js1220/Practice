@@ -1,0 +1,6 @@
+#python
+#Sums(1-x)
+N = int(input())
+listy = list(range(0,N))
+new_list = [x+1 for x in listy]
+print(sum(new_list))
