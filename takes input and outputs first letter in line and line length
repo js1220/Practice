@@ -9,5 +9,17 @@ file.close()
 for item in lines:
     answer = str(item)
     print(answer[2] + (str(len(answer)-4)))
+    
+    
+    
+    ###how i should have done it 
+    
+    file = open("/usercode/files/books.txt", "r")
+
+for line in file:
+	title=line.replace('\n','')
+	count=len(title)
+	print(f'{title[0]}{count}')
+file.close()
 
 
