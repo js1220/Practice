@@ -1,0 +1,13 @@
+### takes input and outputs first letter in line and line length 
+
+
+file = open("/usercode/files/books.txt", "r")
+lines = [[x.rstrip('\n')] for x in file]
+file.close()
+# ^ gets my list split up 
+
+for item in lines:
+    answer = str(item)
+    print(answer[2] + (str(len(answer)-4)))
+
+
